@@ -1,0 +1,132 @@
+/* Resseting css */ 
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 38px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Container styles */ 
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Header Styles */ 
+
+.header {
+  padding: 1.5rem;
+}
+
+.header__logo{
+  text-align: center;
+}
+
+/* Card Styles */ 
+
+.province {
+  box-shadow: 0px 4.00096px 4.00096px rgba(36, 12, 185, 0.25);
+  margin-bottom: 30px;
+}
+
+.province__text {
+  padding: 1rem;
+}
+
+.province__img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.province__name {
+  text-align: center;
+  font-size: 23px;
+}
+
+.province__days {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Footer Sources Styles */ 
+
+
+.sources__list {
+  padding: 0;
+}
+
+.sources__item{
+  list-style: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sources__warning {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer_p {
+  padding: .3rem;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.footer_a {
+  color: white;
+}
+
+/* Responsive design */ 
+
+@media screen and (min-width: 700px) {
+  
+  .logo__img {
+    width: auto;
+  }
+
+  .rp-header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .province-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .province-card {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
